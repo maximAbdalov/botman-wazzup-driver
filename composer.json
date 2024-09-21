@@ -1,0 +1,53 @@
+{
+    "name": "foxtes/botman-wazzup-driver",
+    "license": "MIT",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "BotMan\\Drivers\\WazzupDriver\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Maxim",
+            "email": "maxim.abdalov@gmail.com"
+        }
+    ],
+    "keywords": [
+        "Bot",
+        "BotMan",
+        "WazzUp",
+        "WhatsApp API",
+        "WhatsApp Business",
+        "WhatsApp Messages",
+        "WhatsApp Community",
+        "WazzUp",
+        "WhatsApp Bot",
+        "WazzUp Bot",
+        "Laravel WhatsApp",
+        "Laravel WazzUp"
+    ],
+    "require": {
+        "php": ">=7.4",
+        "botman/botman": "~2.0|~3.0",
+        "ext-json": "*",
+        "ext-curl": "*",
+        "ralouphie/mimey": "^2.1",
+        "ext-fileinfo": "*",
+        "nyholm/psr7": "^1.2",
+        "psr/http-client": "^1.0"
+    },
+    "require-dev": {
+        "botman/studio-addons": "~1.0",
+        "phpunit/phpunit": "~5.0",
+        "illuminate/contracts": "~5.5.0",
+        "mockery/mockery": "~1.3.3"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "WazzupServiceProvider"
+            ]
+        }
+    }
+}
