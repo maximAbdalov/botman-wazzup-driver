@@ -45,7 +45,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "WazzupServiceProvider"
+                "BotMan\\Drivers\\WazzupDriver\\Providers\\WazzupServiceProvider"
             ]
         }
     }
