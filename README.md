@@ -11,7 +11,7 @@ composer require foxtes/botman-wazzup-driver
 ```
 Then you should define in the .env file the following properties:
 ```dotenv
-WHATSAPP_PARTNER="https://api.wazzup24.com/v3"
+WHATSAPP_PARTNER="https://api.wazzup24.com/v3/"
 WHATSAPP_TOKEN=your_token
 WHATSAPP_CHANEL_ID=your_chanel_id
 ```

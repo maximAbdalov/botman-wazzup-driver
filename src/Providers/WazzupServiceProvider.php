@@ -5,7 +5,7 @@ namespace BotMan\Drivers\WazzupDriver\Providers;
 use BotMan\Drivers\WazzupDriver\WhatsAppDriver;
 use Illuminate\Support\ServiceProvider;
 use BotMan\BotMan\Drivers\DriverManager;
-use BotMan\Drivers\VK;
+use BotMan\Drivers\WazzupDriver;
 use BotMan\Studio\Providers\StudioServiceProvider;
 
 class WazzupServiceProvider extends ServiceProvider
