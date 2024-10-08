@@ -123,6 +123,7 @@ class WhatsAppDriver extends HttpDriver
             $dtoMessage->contentUri = $attachment->getUrl();
         }
         if ($message instanceof Question && $buttons = $message->getButtons()) {
+            $buttons = array_slice($buttons, 0, 10);
             foreach ($buttons as $btn) {
                 $button = new MessageButtonDto();
                 $button->text = Str::limit(Arr::get($btn, 'text'), 16, '..');
