@@ -115,7 +115,7 @@ class WhatsAppDriver extends HttpDriver
 
         $dtoMessage = new MessageRequestDto();
         $dtoMessage->text = strip_tags($message->getText());
-        $dtoMessage->chatId = $matchingMessage->getRecipient();
+        $dtoMessage->chatId = $matchingMessage->getRecipient() ? $matchingMessage->getRecipient() : ($additionalParameters['chat_id'] ?? null);
         $dtoMessage->channelId = $this->chanelId;
         $dtoMessage->chatType = self::CHAT_TYPE;
         if ($message instanceof OutgoingMessage && $attachment = $message->getAttachment()) {
