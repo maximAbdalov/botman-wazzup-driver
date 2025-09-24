@@ -16,4 +16,9 @@ class Messages extends WazzupModule
     {
         return $this->getApi()->post(self::API_POINT, $dto);
     }
+
+    public function delete(string $id): \Psr\Http\Message\ResponseInterface
+    {
+        return $this->getApi()->delete(static::API_POINT . $id);
+    }
 }
