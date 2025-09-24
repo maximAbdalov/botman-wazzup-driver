@@ -162,4 +162,9 @@ class WhatsAppDriver extends HttpDriver
         return $result;
 
     }
+
+    public function deleteMessage(string $messageId)
+    {
+        return $this->wazzupClient->messages()->delete($messageId);
+    }
 }
